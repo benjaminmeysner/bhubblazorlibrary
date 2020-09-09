@@ -1,0 +1,7 @@
+﻿@namespace BHub.Lib.Components
+<!-- Be sure whoever implements has toasts css  -->
+<div class="toast-item @(IsVisible ? string.Empty : m_onInitialise ? "hidden" : "fade-toast-out")  @m_typeClass mt-4" role="alert">
+    <span class="@IconClass mr-2" aria-hidden="true"></span>
+    <strong>@Title</strong>
+    <span>@((MarkupString)Message)</span>
+</div>
